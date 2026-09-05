@@ -209,7 +209,7 @@
 
     $('title1').innerHTML='1. '+d.ex1.x+' × 10<sup>'+pow10exp(d.ex1.e)+'</sup>';
     $('line1a').innerHTML=d.ex1.x+' × 10<sup>'+pow10exp(d.ex1.e)+'</sup>';
-    ['m1','m1b','m1c'].forEach(id=>$(id).textContent=fr(d.ex1.m));
+    ['m1','m1b','m1c'].forEach(id=>$(id).textContent=formatFixed(d.ex1.m,2));
     $('e1a').textContent=pow10exp(d.ex1.e);
     $('e1b').textContent=pow10exp(d.ex1.e);
     $('op1').textContent='−';
@@ -217,7 +217,7 @@
 
     $('title2').innerHTML='2. '+d.ex2.x+' × 10<sup>'+pow10exp(d.ex2.e)+'</sup>';
     $('line2a').innerHTML=d.ex2.x+' × 10<sup>'+pow10exp(d.ex2.e)+'</sup>';
-    ['m2','m2b','m2c'].forEach(id=>$(id).textContent=fr(d.ex2.m));
+    ['m2','m2b','m2c'].forEach(id=>$(id).textContent=formatFixed(d.ex2.m,2));
     $('e2a').textContent=pow10exp(d.ex2.e);
     $('e2b').textContent=pow10exp(d.ex2.e);
     $('op2').textContent='−';
